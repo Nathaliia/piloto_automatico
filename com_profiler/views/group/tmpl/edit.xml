@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PROFILER_REGISTRATION_VIEW_DEFAULT_TITLE" option="COM_PROFILER_REGISTRATION_VIEW_DEFAULT_OPTION" hidden="true">
+		<message>
+			<![CDATA[COM_PROFILER_REGISTRATION_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="params" addfieldpath="/components/com_profiler/models/fields">
+		<fieldset name="basic" label="COM_PROFILER_VIEW_REGISTRATION_PARAMS">
+			<field name="showcategoryname" type="list" description="COM_PROFILER_VIEW_REGISTRATION_PARAMS_FIELD_SHOWCATEGORY_DESC" label="COM_PROFILER_VIEW_REGISTRATION_PARAMS_FIELD_SHOWCATEGORY_LABEL" default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="showpluginviews" type="list" description="COM_PROFILER_VIEW_REGISTRATION_PARAMS_FIELD_SHOWPLUGINS_DESC" label="COM_PROFILER_VIEW_REGISTRATION_PARAMS_FIELD_SHOWPLUGINS_LABEL" default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="showmoduleviews" type="list" description="COM_PROFILER_VIEW_REGISTRATION_PARAMS_FIELD_SHOWMODULES_DESC" label="COM_PROFILER_VIEW_REGISTRATION_PARAMS_FIELD_SHOWMODULES_LABEL" default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

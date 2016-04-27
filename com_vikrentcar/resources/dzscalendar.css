@@ -1,0 +1,356 @@
+/* --- functional styling */
+.dzscalendar {
+  position: relative;
+  width: 193px;
+  margin: 0 auto;
+  height: 165px;
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: height;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: height;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: height;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out; }
+
+.dzscalendar table, .dzscalendar tbody, .dzscalendar tbody > tr {
+  position: relative; }
+
+.dzscalendar .events {
+  display: none; }
+
+.dzscalendar .calendar-controls {
+  position: relative; }
+
+.dzscalendar .theMonths {
+  position: relative; }
+
+.dzscalendar .theMonths > * {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* --- estethic styling */
+.dzscalendar {
+  font-family: 'Carrois Gothic', Arial; 
+  font-size: 14px;
+}
+
+.dzscalendar .testimonial span {
+  font-size: 2.5em;
+  font-family: Courier New, Arial;
+  font-style: italic;
+  line-height: 1em;
+  color: #555; }
+
+.dzscalendar .testimonial .the-author {
+  font-size: 1em;
+  font-family: Courier New, Arial;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 10px; }
+
+.dzscalendar table td {
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 12px; }
+
+.dzscalendar table .other-months-date {
+  opacity: 0.3;
+  filter: alpha(opacity=30); }
+
+.dzscalendar .past-date {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+.dzscalendar .hasEvent {
+  color: #6fb6ce;
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+  cursor: pointer;
+  font-weight: bold; 
+  opacity: 1;
+  }
+
+.dzscalendar .ldate {
+  text-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+  cursor: pointer;
+}
+
+.dzscalendar .calendar-controls {
+  min-height: 27px;
+  width: 100%; }
+
+.dzscalendar .calendar-controls .arrow-left {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  background: transparent no-repeat center center url(images/arrowline-left-simple.png);
+  width: 15px;
+  height: 16px;
+  cursor: pointer; }
+
+.dzscalendar .calendar-controls .arrow-right {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  background: transparent no-repeat center center url(images/arrowline-right-simple.png);
+  width: 15px;
+  height: 16px;
+  cursor: pointer; }
+
+
+.dzscalendar .calendar-controls .curr-date {
+  text-align: center;
+  padding-top: 0px; }
+
+.dzscalendar .curday {
+  color: blue; 
+}
+
+.dzscalendar .calendar-controls .curr-month {
+  margin-right: 15px; }
+
+.dzscalendar .calendar-controls .curr-year {
+  color: #aaa; }
+
+.dzscalendar .theMonths, .dzscalendar .calendar-controls {
+  width: 100%;
+  marign-top: 0; }
+
+.dzscalendar .theMonths {
+  width: 100%;
+  height: 138px;
+  overflow: hidden;
+  marign-top: 0; }
+
+.dzscalendar .slideDescription {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */ }
+
+.dzscalendar .slideDescription .desc-close-button {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  text-align: center;
+  padding: 1px 7px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-family: arial, serif;
+  cursor: pointer; }
+
+.dzscalendar .dzstooltip {
+  position: absolute;
+  opacity: 0;
+  z-index: 576;
+  text-align: left;
+  transition-property: height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: height;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: height;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: height;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out; }
+
+.dzstooltip span.label {
+  font-weight: bold; }
+
+.dzstooltip > div {
+  padding-bottom: 10px; }
+
+.dzstooltip > div > h5 {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin-top: 7px;
+  margin-bottom: 10px; }
+
+.dzscalendar.skin-other .testimonial span {
+  font-size: 1em; }
+
+.dzscalendar.skin-other .testimonial .the-author {
+  font-size: 1em;
+  font-family: Courier New, Arial;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0px; }
+
+.dzscalendar.skin-black .testimonial span {
+  font-size: 1em; }
+
+.dzscalendar.skin-black .testimonial .the-author {
+  font-size: 1em;
+  font-family: Courier New, Arial;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0px; }
+
+.dzscalendar.skin-black {
+  background: #222;
+  color: #fff;
+  padding: 7px 3px 12px;
+  border-radius: 5px; }
+
+.dzscalendar.skin-black .calendar-controls .arrow-left {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  background: transparent no-repeat center center url(images/arrowline-left-simple.png);
+  width: 15px;
+  height: 16px;
+  cursor: pointer; }
+
+.dzscalendar.skin-black .calendar-controls .arrow-right {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  background: transparent no-repeat center center url(images/arrowline-right-simple.png);
+  width: 15px;
+  height: 16px;
+  cursor: pointer; }
+
+.dzscalendar.skin-aurora {
+  width: 214px;
+  height: 400px; }
+
+.dzscalendar.skin-aurora .calendar-controls {
+  background: #333;
+  color: #fff;
+  padding-top: 6px; }
+
+.dzscalendar.skin-aurora .theMonths {
+  height: auto; }
+
+.dzscalendar.skin-aurora .theMonths > * {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.dzscalendar.skin-aurora table td {
+  text-align: center;
+  font-size: 11px;
+  background: #eeeeee;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #eeeeee 0%, #e5e5e5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #e5e5e5));
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #e5e5e5 100%);
+  background: -o-linear-gradient(top, #eeeeee 0%, #e5e5e5 100%);
+  background: -ms-linear-gradient(top, #eeeeee 0%, #e5e5e5 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#e5e5e5',GradientType=0 );
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2);
+  opacity: 0.75;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */ }
+
+.dzscalendar.skin-aurora table .other-months-date {
+  opacity: 0.3;
+  filter: alpha(opacity=30); }
+
+.dzscalendar.skin-aurora .past-date {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+.dzscalendar.skin-aurora table td {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  padding: 3px 7px; }
+
+.dzscalendar.skin-aurora .headerRow td {
+  background: #f6f6f6;
+  font-size: 8px;
+  border: 0;
+  box-shadow: none; }
+
+.dzscalendar.skin-aurora tr {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2); }
+
+.dzscalendar.skin-aurora .calendar-controls .arrow-left {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  background: transparent no-repeat center center url(images/arrowleft.png);
+  width: 15px;
+  height: 16px;
+  cursor: pointer; }
+
+.dzscalendar.skin-aurora .calendar-controls .arrow-right {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: transparent no-repeat center center url(images/arrowright.png);
+  width: 15px;
+  height: 16px;
+  cursor: pointer; }
+
+.dzscalendar.skin-aurora .hasEvent {
+  color: #fff;
+  cursor: pointer;
+  font-weight: normal;
+  background: #b0d4e3;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiMGQ0ZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjODhiYWNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #b0d4e3 0%, #88bacf 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #b0d4e3), color-stop(100%, #88bacf));
+  background: -webkit-radial-gradient(center, ellipse cover, #b0d4e3 0%, #88bacf 100%);
+  background: -o-radial-gradient(center, ellipse cover, #b0d4e3 0%, #88bacf 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #b0d4e3 0%, #88bacf 100%);
+  background: radial-gradient(ellipse at center, #b0d4e3 0%, #88bacf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=1 ); }
+
+.dzscalendar.skin-responsive {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%; }
+
+.dzscalendar.skin-responsive .calendar-controls {
+  margin-bottom: 8px; }
+
+.dzscalendar.skin-responsive .theMonths {
+  height: auto; }
+
+.dzscalendar.skin-responsive .theMonths > * {
+  width: 100%;
+  position: relative; }
+
+.dzscalendar.skin-responsive table td {
+  width: 14%;
+  height: 30px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1); }
+
+.dzscalendar.skin-responsive table tr td:first-child {
+  border-left: 0px solid rgba(0, 0, 0, 0.1); }
+
+.dzscalendar.skin-responsive .calendar-controls .arrow-left {
+  left: 35px; }
+
+.dzscalendar.skin-responsive .calendar-controls .arrow-right {
+  right: 25px; }

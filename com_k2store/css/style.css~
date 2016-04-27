@@ -1,0 +1,31 @@
+table#cart th {
+		background: #006b68;
+		color: #fff;
+		text-align: left;
+		white-space: nowrap;
+	}
+	
+	table#cart th,
+	table#cart td {
+		padding: 5px 10px;
+	}
+
+table.k2store_orders {
+border: 1px solid #ccc;
+font-weight: bold;
+
+}
+
+table.k2store_orders th {
+
+		background: #006b68;
+		color: #fff;
+		text-align: left;
+		white-space: nowrap;
+
+}
+
+tr.k2store_table_footer {
+border-top: 1px solid #ccc;
+
+}

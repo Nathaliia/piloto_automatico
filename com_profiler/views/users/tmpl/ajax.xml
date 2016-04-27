@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="com_profiler_users_view_ajax_title" option="com_profiler_users_view_ajax_option">
+		<message>
+			<![CDATA[com_profiler_users_view_ajax_desc]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+<fields name="params" addfieldpath="/components/com_profiler/models/fields">
+	<fieldset name="basic" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC">
+		<field name="layout" type="componentlayout" label="JGLOBAL_FIELD_LAYOUT_LABEL" description="JGLOBAL_FIELD_LAYOUT_DESC" menuitems="true" extension="com_profiler" view="users"/>
+		<field name="table" type="userlisttable" where="com_profiler" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_TABLE_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_TABLE_DESC" />
+		<field name="easyfilter" type="sql" class="inputbox"  translate="true" multiple="true" query="SELECT name AS `value`, title AS `easyfilter` FROM #__profiler_fields WHERE extension='com_profiler'" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_EASYFILTER_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_EASYFILTER_DESC" />
+		<field name="filter" type="selectfield" where="com_profiler" class="inputbox" rows="3" cols="30" default="" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_FILTER_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_FILTER_DESC" />
+		<field name="sort" type="selectfield" where="com_profiler" class="inputbox" rows="3" cols="30" default="Name|username" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_SORT_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_SORT_DESC" />
+		<field name="usergroup" type="usergroup" multiple="true" class="inputbox" default="2" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_USERGROUP_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_USERGROUP_DESC" />
+		<field name="showblock" type="list" description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_SHOWBLOCK_DESC" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_SHOWBLOCK_LABEL">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="downloadenable" type="list" description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_DOWNLOADENABLE_DESC" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_DOWNLOADENABLE_LABEL">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="download" type="sql" translate="true" multiple="true" class="inputbox" query="SELECT name AS `value`, title AS `download` FROM #__profiler_fields" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_DOWNLOAD_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_DOWNLOAD_DESC" />
+	</fieldset>
+	<fieldset name="profile" label="COM_PROFILER_VIEW_USERLIST_PARAMS_PROFILEVIEW">
+		<field name="userlist_layout" type="componentlayout" default="_:profile" label="JGLOBAL_FIELD_LAYOUT_LABEL" description="JGLOBAL_FIELD_LAYOUT_DESC" menuitems="true" extension="com_profiler" view="user"/>
+		<field name="readonly" type="list" description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_READONLY_DESC" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_READONLY_LABEL">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+	<fieldset name="advanced" label="COM_PROFILER_VIEW_USERLIST_PARAMS_ADVANCED">
+		<field name="where" type="textarea" class="inputbox" rows="3" cols="30" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_WHERE_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_WHERE_DESC" />
+		<field name="ordering" type="textarea" class="inputbox" rows="3" cols="30" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_ORDERING_LABEL"	description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_ORDERING_DESC" />
+	
+	</fieldset>
+</fields>
+</metadata>

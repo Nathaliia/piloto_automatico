@@ -1,0 +1,149 @@
+.center { text-align: center; }
+#container {
+	background: #fff;
+	margin: 10px auto 0 auto;
+	padding: 1em;
+	width: auto;	
+	margin-left: 10px;
+}
+
+
+
+table#cart {
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	width: 100%;
+}
+	
+	table#cart th {
+		background: #0055b3;
+		color: #fff;
+		text-align: left;
+		white-space: nowrap;
+	}
+	
+	table#cart th,
+	table#cart td {
+		padding: 5px 10px;
+	}
+	
+	table#cart tr td {
+		background: #fff;
+		border: 1px solid #ccc;
+	}
+	table#cart tr.cart_subtotal td {
+		border-bottom: 1px solid #ccc;
+	}
+	
+	table#cart tfoot tr td {
+	border: none;
+	}
+	
+	table#cart tr.row0 td {
+		background: #EFEFEF;
+	}	
+	
+table#cart a div.k2storeCartRemove {
+	background: url("../images/remove-roll.png") no-repeat scroll 0 0 transparent; 
+	height: 18px;
+    width: 18px;
+   } 
+table#cart a:hover div.k2storeCartRemove {
+background: url("../images/remove-over.png") no-repeat scroll 0 0 transparent; 
+}
+
+table.k2store_orders {
+border: 1px solid #ccc;
+font-weight: bold;
+
+}
+
+table.k2store_orders th {
+
+		background: #006b68;
+		color: #fff;
+		text-align: left;
+		white-space: nowrap;
+
+}
+
+tr.k2store_table_footer td {
+border-top: 1px solid #ccc;
+
+}
+
+
+/* Checkout 
+---------------------------------------------------*/ 
+table.adminlist thead th {background: #f1f1f1}
+.cartitems table.adminlist td {border: none;background: url(../images/rowSeparator.png) repeat-x left top;padding: 20px 10px;text-align: left}
+.address_form {margin: 20px 0}
+table.adminlist thead th {background: none;text-align: left;background: url(../images/rowSeparator.png) repeat-x left bottom;padding: 0 0 20px 0}
+
+
+/* Login 
+---------------------------------------------------*/
+.k2storeLogin {background: url(../images/rowSeparator.png) repeat-x left bottom;padding-bottom: 20px;margin-bottom: 20px;height: 160px}
+.k2storeLogin ul li {list-style-type: none;margin: 0 20px 0 0;float: left}
+.rememberMe {float: left;clear: both;width: 20%}
+.rememberMe  .inputbox {margin-top: 4px}
+.k2storeLogin ul.loginLinks {float: left;margin: 0}
+.k2storeLogin ul.loginLinks li {padding: 0}
+.k2storeLogin .button {float: right;margin-top: 30px}
+.k2storeUserLogin .inputbox,.k2storeUserPassword .inputbox {border: 1px solid #ddd;padding: 8px;width: 96%;margin-bottom: 20px;background: #fff url(../images/fieldShadow.jpg) repeat-x}
+.k2storeUserLogin {float: left;width: 40%;margin-right: 5%;height: 60px}
+.k2storeUserPassword {float: left;width: 40%;height: 60px}
+.k2storeNewusers {background: url(../images/rowSeparator.png) repeat-x left bottom;padding-bottom: 20px;height: 130px}
+.k2storeNewusers .button {float: right}
+.k2storeGuests {background: url(../images/rowSeparator.png) repeat-x left bottom;padding-bottom: 20px;height: 130px}
+.k2storeGuests .button {float: right}
+
+
+#k2store_order_item table.orderDetailTable td, #k2store_order_item table.orderDetailTable th {
+
+text-align: center;
+
+}
+
+#k2store_order_item table.orderDetailTable td.k2store_total {
+
+text-align: right;
+
+}
+
+#k2store_tos.invalid {
+background: #ff0000;
+border: 1px solid #ff0000;
+color: #ff0000;
+}
+
+#checkbox_tos .invalid a {
+color: #ff0000;
+font-weight: bold;
+}
+
+
+/********************/
+Orders
+/********************/
+
+#orders table{
+background-color: #E6EFF3;
+padding: 10px;
+}
+
+
+table.orderInfoTable {
+border-left:1px solid white
+}
+
+table.paymentTable {
+border-left:1px solid white
+}
+
+table.orders {
+background-color: #E6EFF3;
+padding: 10px; 
+width:550px;
+}
+

@@ -1,0 +1,1321 @@
+.err {
+	background:#efefef url("./error.png") 10px no-repeat !important;
+	border:1px solid #ddd !important;
+	padding:22px 0 0 40px !important;
+	color:#900;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.warn {
+	background:#efefef url("./warning.png") 10px no-repeat !important;
+	border:1px solid #ddd !important;
+	padding:22px 0 0 40px !important;
+	color:#900;
+	font-family:"Century Gothic", Tahoma, Arial;
+	font-weight:bold;
+}
+.successmade {
+	background:#efefef url("./success.png") 10px no-repeat !important;
+	border:1px solid #ddd !important;
+	padding:22px 0 0 40px !important;
+	color:#006511;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.vrclocationbox {
+	background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+.vrclocationbox h3 {
+	font-weight:bold;
+	font-size:15px !important;
+	margin:0 0 3px 0;
+}
+.vrcentercoupon {
+	float:right;
+	background: none repeat scroll 0 0 #f6f6f6;
+    border: 1px solid #C9E9FC;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    color: #666666;
+    font-size: 14px;
+    margin: 0 15px 20px 0;
+    padding: 10px;
+	width:50%;
+}
+.vrcentercoupon span {
+	display:block;
+	padding:0 0 5px 0;
+}
+.vrcentercoupon input.vrcinputcoupon {
+	background: none repeat scroll 0 0 #FDFDFD;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+	-moz- border-radius: 3px 3px 3px 3px;
+	-webkit- border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 2px #CCCCCC inset;
+	-webkit-box-shadow: 0 0 2px #CCCCCC inset;
+	-moz-box-shadow: 0 0 2px #CCCCCC inset;
+    color: #666666;
+    font-family: "Century Gothic",Tahoma,Arial;
+    font-size: 12px;
+    height: 20px;
+    padding: 5px 8px;
+}
+.vrcentercoupon input.vrcsubmitcoupon {
+	background: #0D830A;
+    border: 1px solid #094F06;
+    border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding:7px;
+	margin:0 0 0 5px;
+}
+.vrcentercoupon input.vrcsubmitcoupon:hover {
+	background:#094F06;
+	border: 1px solid #0D830A;
+}
+.vrclocationbox .vrcloclistloctimebox {
+	color:#00647E;
+}
+.vrclocationbox .vrcloclistlocdescr {
+	margin:10px 0 0 0;
+}
+.vrclocationbox .vrcloclistlocdescr p {
+	margin: 0px 0 5px 0;	
+}
+.vrcvordudata {
+	width:60%;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:15px;
+	line-height:1.6em;
+	margin:25px 10px 0 0;
+	font-size:13px;
+}
+.vrcvordudata p {
+	margin:0;
+	padding:0;
+}
+.vrcvordudata span {
+	display:block;
+}
+.vrcvordcarinfo {
+	line-height:1.8em;
+	font-size:14px;
+	margin:15px 0 0 0;
+	background:#fbfbfb;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	width:60%;
+	padding:15px;
+}
+.vrcvordcarinfo p, .vrcvordcosts p {
+	margin:0;
+	padding:0;
+}
+.vrcvordcosts {
+	font-size:14px;
+	margin:15px 0 0 0;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	width:60%;
+	line-height:2em;
+	padding:15px;
+}
+.vrcvordcosts .vrcvordcoststot {
+	color: #144D5C;
+    font-size: 17px;
+}
+.vrcvordcosts .vrcvordcoststot .vrcvordcoststitle {
+
+}
+.vrcvordpaybutton {
+	margin:10px 0;
+}
+.vrcvordcarinfo .vrcvordcarinfotitle {
+	font-weight:bold;
+}
+.vrcvordudata .vrcvordudatatitle {
+	color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+	padding:0 0 5px 0;
+}
+.car_container {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	width: 97%;
+	padding: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+
+img.car_container{
+
+	height: auto;
+	width: auto;
+}
+.imgresult {
+	padding:1px;
+	border:1px solid #ddd;
+}
+.car_img_box {
+	float: left;
+	margin-right: 12px;
+	border:1px solid #eee;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	padding:10px;
+
+}
+
+
+
+div.car_img_box img {
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+
+	
+    
+
+}
+
+.car_description_box {
+	display: inline;
+}
+
+.car_carats {
+	margin:10px 0 0 0;
+	display: block;
+}
+.car_carats table td {
+    padding: 10px !important;
+	margin:0 3px 5px 0;
+	border-right:1px dotted #ccc;
+	vertical-align:middle;
+}
+.car_carats table tr td:last-child {
+	border:0;
+}
+.vrhword {
+	font-size: 15px;
+	font-weight:bold;
+	display: block;
+	text-transform:uppercase;
+}
+
+.car_prices {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	min-width: 44.6%;
+	padding: 15px;
+	float: left;
+	font-size:13px;
+}
+.car_prices table {
+	border-spacing:0;
+ 	border-collapse:collapse;
+	width:95%;
+}
+.car_prices table td {
+	border-bottom:1px solid #eee;
+	border-spacing:0;
+ 	border-collapse:collapse;
+	padding:7px 0 !important;
+}
+.car_prices table tr:last-child td {
+	border:0;
+	padding:7px 0 0 0 !important;
+}
+.vrcarsfound {
+	font-size:14px;
+	color:#999;
+	border-bottom:1px solid #ddd;
+	padding:0 0 5px 0;
+}
+.car_options {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	min-width: 44%;
+	padding: 15px;
+	float: right;
+	font-size:13px;
+}
+.car_options .vrcoptionaldescr {
+	padding:0 0 10px 0;
+}
+.car_options .vrhword {
+	margin:0 0 10px 0;
+}
+.car_options p {
+	padding:0;
+	margin:0;
+}
+.car_options table td input {
+	padding:3px;
+	border-radius:3px;
+	border:1px solid #ccc;
+	background:#fafafa;
+	box-shadow:0 0 2px #CCCCCC inset;
+	color:#444;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.car_options table td:first-child {
+	width:15px;
+}
+.car_buttons_box {
+	float: left;
+	margin:15px 0 0 0;
+}
+.car_buttons_box .booknow {
+	margin:0 0 15px 0;
+}
+.car_buttons_box .goback {
+}
+.booknow {
+	height: 33px;	
+	/*background: transparent url('./book.png') repeat-x;*/
+	background-color:rgb(6,139,214);
+	border: 1px solid #248d3a;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:11px;
+	margin:10px 0 10px 0;
+	width:auto;
+}
+
+.goback {
+	display: block;
+	background: #ccc;
+	text-align: center;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	cursor: pointer;
+	height:22px;
+	line-height:22px;
+	border:1px solid #999;
+	width:118px;
+}
+
+.goback a {
+	font-weight: bold;
+	display: block;
+	text-transform:uppercase;
+	font-size:11px;
+	color:#666;
+}
+
+.vrcrentalriepilogo {
+	font-size:16px;
+	color:#666;
+	text-transform:uppercase;		
+}
+.vrcrentforlocs {
+	float:none;
+	clear:both;
+}
+.vrcrentalfor {
+	width:280px;
+	margin:0 0 10px 0;
+	padding:0;
+} 
+.vrcrentalfordate {
+	font-size:15px;
+	padding:0 2px;
+	color:#000;
+}
+.vrcrentalfor .vrcrentalforone {
+	display:block;
+	font-size:14px;
+}
+.vrcrentalfortwo {
+	display:block;
+	width:185px;
+	font-size:12px;
+	color:#666;
+	padding:5px 0 0 0;
+	text-transform:uppercase;
+	float:left;
+}
+.vrcrentalfortwo p {
+	display:block;
+	margin:0 0 5px 0;
+	padding:0;
+}
+
+
+.vrctableorder {
+	line-height:1.6em;
+	margin:0 0 20px 0;
+	width:98%;
+}
+
+.vrctableorderA {
+	line-height:1.6em;
+	margin:0 0 20px 0;
+	width:100%;
+}
+
+
+
+.vrctableorder .vrctableorderfrow td {
+	padding:3px 8px;
+	border-radius:4px;
+	background:#C9E9FC;
+}
+
+.vrctableorder .vrctableorderfrow  {
+	padding:3px 8px;
+	border-radius:4px;
+	background:#C9E9FC;
+	
+	
+}
+
+.vrctableorderfrow.header  {
+
+	/*
+	padding:3px 8px 8px;
+	border-radius:4px;
+	background:#C9E9FC;
+	float: left;
+	width: 40%;
+	  border-style: solid;
+    border-width: 1px;
+    margin-bottom: 3px;*/
+
+    width: 40%;
+    float: left;
+    text-align: right;
+    font-weight:bold; 
+    padding-top: 2%;
+
+	
+	
+	
+}
+
+.formuserfinal{
+
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding-top: 25px;
+}
+
+.resumenvalores{
+
+
+	font-size: 1.2em;
+}
+.totalordenes{
+
+	
+
+	/*background:#C9E9FC;*/
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,93,171,1) 0%, rgba(246,246,246,1) 5%, rgba(246,246,246,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(0,93,171,1)), color-stop(5%, rgba(246,246,246,1)), color-stop(100%, rgba(246,246,246,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,93,171,1) 0%, rgba(246,246,246,1) 5%, rgba(246,246,246,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,93,171,1) 0%, rgba(246,246,246,1) 5%, rgba(246,246,246,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(0,93,171,1) 0%, rgba(246,246,246,1) 5%, rgba(246,246,246,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,93,171,1) 0%, rgba(246,246,246,1) 5%, rgba(246,246,246,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0 );
+
+
+
+
+    width: 100%;
+	float: left;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	/*border-style: solid;*/
+	border-width: 1px;
+	font-size: 16px;
+	box-shadow: 2px 2px 2px #BBB;
+	padding-bottom: 5px;
+
+
+	
+
+
+}
+
+.headertable{
+	float: left;
+	width: 50%;
+}
+
+.datostable{
+
+	width: 100%;
+	float: left;
+	
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-style: solid;
+	/*border-width: 1px;*/
+	/*background: #efefef;*/
+	margin-bottom: 2%;
+	background: transparent linear-gradient(to bottom, #FFF 0%, #F2F2F2 100%) repeat scroll 0% 0%;
+	box-shadow: 2px 2px 2px #BBB;
+	padding-bottom: 5px;
+
+
+	
+	
+	
+	
+}
+
+.descripcion{
+
+	width: 45%;
+
+	float: left;
+	text-align: left;
+	padding-top: 2%;
+
+/*border-radius: 4px;
+width: 45%;
+border-style: solid;
+border-width: 1px;
+background: #efefef none repeat scroll 0% 0%;
+float: left;
+margin-bottom: 3px;
+padding: 3px 8px 8px;
+margin-left: 5%;*/
+
+
+}
+
+.estado{
+	height: auto;
+	
+}
+
+.colsob{
+height: auto;
+
+}
+
+.tiempo{
+	height: auto;
+	
+}
+
+
+
+.precio{
+	height: auto;
+
+	
+}
+
+.impuesto{
+	height: auto;
+
+	
+}
+
+.precioTotal{
+	height: auto;
+
+	
+}
+
+.col7{
+
+	width: 15%;
+
+
+	
+}
+
+
+.encabezadoorden {
+
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-weight:bold;
+
+
+
+}
+
+img.encabezadoorden{
+
+	height:auto;
+	width:100px;
+}
+
+.formattotalpagar{
+
+	color:#144d5c;
+	font-size: 18px;
+
+
+
+
+}
+
+
+.formattotalcoupon{
+
+	color:#144d5c;
+	font-size: 16px;
+
+
+}
+
+.formattotalimp{
+	color:#144d5c;
+	font-size: 16px;
+
+
+
+}
+
+.formatsubtotal{
+
+	color:#144d5c;
+	font-size: 16px;
+
+
+}
+
+.formattotalneto{
+
+	color:#144d5c;
+	font-size: 16px;
+
+
+
+
+}
+
+
+
+.numerocoupon{
+
+	width: auto;
+	float: right;
+
+
+}
+
+
+.numero{
+
+	float: left;
+
+	text-align: right;
+
+
+}
+
+.subtotal{
+
+	 text-decoration: overline;
+}
+
+.numero:hover{
+
+	background:#C9E9FC;
+
+
+	
+}
+
+
+.w20{
+
+width: 20%;
+
+}
+.w5{
+
+	width: 5%;
+}
+
+.w30{
+	
+width: 30%;
+
+}
+
+.w10{
+	
+width: 10%;
+
+}
+
+.fila{
+
+	
+	
+	
+
+
+	
+}
+.vrctableorder .vrcordrowtotal {
+	font-size:13px;
+}
+.vrctableorder .vrcordrowtotal .vrctotalord {
+	color:#144d5c;
+}
+.vrctableorder .vrcordrowtotal .vrctotalord .vrccurrency, .vrctableorder .vrcordrowtotal .vrctotalord .vrcprice {
+	font-size:16px;
+}
+.vrctableorder .vrcordrowtotal td { 
+	padding:3px 8px;
+	border-radius:4px;
+	font-weight:normal !important;
+	background:#efefef;
+}
+.vrcpickuploc {
+	background: none repeat scroll 0 0 #FBFBFB;
+    border: 1px solid #C9E9FC;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    color: #666666;
+    float: left;
+    font-size: 16px;
+    margin: 0 15px 20px 0;
+    padding: 10px;
+}
+.vrclocsboxsum {
+	float:right;
+}
+.vrcdropoffloc {
+	font-size:16px;
+	margin:0;
+	padding:0;
+	color:#666;
+	background: none repeat scroll 0 0 #FBFBFB;
+    border: 1px solid #C9E9FC;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	padding: 10px;
+	margin:0 0 20px 0;
+	float:left;
+}
+.vrcdropoffloc + form {
+	clear:both;
+	float:none;
+	padding:10px 0 10px 0;
+	margin:15px 0 0px 0;
+	border-top:1px solid #eee;
+}
+.vrcseparatorcflong {
+	font-size:11px;
+	padding:15px 0 10px;
+	color:#666;
+}
+.vrcchoosepayment {
+	font-size:16px;
+	text-transform:uppercase;
+	padding:10px 0 10px 0 !important;
+	color:#666;
+	margin:0;
+}
+.vrcchoosepayment+ul {
+	margin:0;
+	padding:0;
+}
+.vrcchoosepayment+ul li {
+	display:inline;
+}
+.vrcpickuploc .vrcpickuplocname, .vrcdropoffloc .vrcdropofflocname {
+	display:block;
+	font-size:12px;
+	padding:5px 0 0 0;
+	font-weight:bold;
+}
+.vrccustomfields .vrcseparatorcf {
+	font-size:16px;
+	text-transform:uppercase;
+	padding:10px 0 10px 0 !important;
+	color:#666;
+}
+
+.car_disclaimer {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.car_title {
+	margin-bottom: 13px;
+}
+
+.car_separator {
+	margin-top: 15px;
+}
+
+.car_result {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	width: 98%;
+	padding: 8px;
+	background:url("./sfboxcarlist.png") repeat-x;
+}
+
+.vrcsrowprice .vrcsrowpricediv {
+	background:#eee;
+	border-radius: 10px;
+	padding:8px !important;
+	color:#00647E;
+	width:90px;
+	text-align:center;
+	border:1px solid #ddd;
+}
+.vrcsrowprice .vrcsrowpricediv .vrcstartfrom {
+	font-size:11px;
+	display:block;
+}
+.vrcsrowprice .vrcsrowpricediv .car_cost {
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+}
+.vrcsearchcaratt td {
+	padding:10px !important;
+	font-size:11px;
+	border-bottom:1px dotted #ccc;
+}
+.vrcsearchcaratt tr:last-child td {
+	border:0;
+}
+.vrcrowcname {
+	font-size:14px;
+	font-weight:bold;
+}
+
+.vrcrowcdescr p {
+	margin:0 0 3px 0;
+	padding:0;
+}
+
+.vrcrequired {
+	color: #ff0000;
+}
+
+.vrcinput {
+	color: #666;
+	width: 150px;
+	height: 20px;
+	background: none repeat scroll 0 0 #fdfdfd;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 2px #CCCCCC inset;
+	padding: 5px 8px;
+	font-family:"Century Gothic", Tahoma, Arial;
+	font-size:12px;
+}
+
+.vrcinput:focus {
+	outline: none;
+}
+
+.vrctextarea {
+	color: #666;
+	width: 220px;
+	background: none repeat scroll 0 0 #fdfdfd;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 2px #CCCCCC inset;
+	padding: 5px 8px;
+	font-size:12px;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+
+.vrctextarea:focus {
+	outline: none;
+}
+
+.vrclistcontainer {
+	padding: 5px;
+}
+
+.vrclist {
+	list-style-type: none;
+}
+
+.vrclist {
+	margin:0;
+	padding:0;
+}
+.vrclist li {
+	list-style-type: none;
+	margin:0px 10px 15px 0px !important;
+	border-radius: 7px;
+	padding:15px !important;
+	-moz-border-radius: 7px;
+	webkit-border-radius: 7px;
+	border: 1px solid #CCCCCC;
+	background:url("./sfboxcarlist.png") repeat-x;
+}
+.vrclist li:before {
+}
+.vrclist li span {
+}
+
+img.vrclistimg {
+	float:left;
+	padding: 1px 1px 1px 1px;
+	width:150px;
+	margin:0 15px 10px 0;
+	border:1px solid #ddd;
+}
+
+.vrclistcarname {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.vrclistcarcat {
+	display: block;
+	margin:0 0 5px 0;
+}
+
+.vrclistdivcost {
+    color: #00647E;
+    padding: 2px !important;
+}
+
+.vrclistdivcost .vrcliststartfrom {
+	font-size: 12px;
+	margin:4px 0 0 0;
+    font-size: 11px;
+}
+.car_cost {
+	color: #00647E;
+	font-size: 20px;
+    font-weight: bold;
+}
+.vrcliststartfrom {
+	color: #00647E;
+}
+.vrclistdivcost .car_cost {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vrclistgoon {
+	background: url(./book.png) repeat-x transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 7px 10px;
+    text-align: center;
+	border:1px solid #248D3A;
+	display:inline !important;
+}
+.vrclistgoon a {
+	color: #fff;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+form .vrcselectm {
+	background: none repeat scroll 0 0 #fbfbfb;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    font-family: "Century Gothic",Tahoma,Arial;
+    font-size: 12px !important;
+    line-height: 12px;
+    padding: 6px !important;
+	margin:10px 0 0 0;
+}
+.vrclistsep {
+	display: block;
+	margin:3px 0 10px 0;
+	height:10px;
+}
+
+.vrctdfree{
+	color: #000000;
+	background: #77C06C;
+}
+
+.vrctdbusy{
+	color: #000000;
+	background: #FF0000;
+}
+
+.vrctdwarning{
+	color: #000000;
+	background: #f89d33;
+}
+
+.vrcdetsep {
+	margin-bottom: 5px;
+    margin-top: 8px;
+}
+.vrclegendediv {
+	clear:both;
+	float:none;
+}
+.vrclegenda {
+	margin-right: 15px;
+	font-weight: bold;
+	padding:5px 0;
+}
+
+.vrclegfree {
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	background: #77C06C;
+	display: inline;
+	padding: 0 4px 0 4px;
+}
+
+.vrclegwarning {
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	background: #f89d33;
+	display: inline;
+	padding: 0 5px 0 5px;
+}
+.vrccal tr td {
+	padding:2px;
+	border:1px solid #ddd;
+}
+
+.vrclegbusy {
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	background: #FF0000;
+	display: inline;
+	padding: 0 5px 0 5px;
+}
+.vrccaldays {
+	padding:2px;
+}
+.vrccalcontainer {
+	border:0;
+	border-spacing:0;
+	border-collapse: collapse;
+}
+.vrccalcontainer td {
+	border: 0 none;
+    margin: 5px;
+    padding: 5px 5px 5px 0px;
+}
+.vrccalcontainer .vrccal {
+	border-radius:4px;
+}
+.vrccalform, .vrccalform tr, .vrccalform tr td {
+	border:0;
+}
+.vrccalform tr td {
+	padding:3px;
+}
+.vrccalform tr td select {
+	padding:2px;
+	color:#666;
+	font-size:11px;
+}
+.vrccalform tr td img.calendar {
+	margin:0 0 0 5px;
+}
+
+.car_moreimages {
+	max-width: 250px;
+	overflow: hidden;
+	margin:5px 0 0 0;
+}
+
+
+
+
+.car_moreimages img {
+	margin-right: 3px;
+	padding: 1px;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:70px;
+	height:50px;
+}
+.car_moreimages img:hover {
+	opacity:0.7;
+}
+
+.loginregistercont {
+	width: 100%;
+}
+
+.registerblock {
+	width: 40%;
+	float: left;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	padding:15px;
+	margin:0 15px 0 0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.registerblock h3, .loginblock h3 {
+	color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+	padding:10px 0;
+}
+.registerblock table {
+	width:80%;
+}
+
+.loginblock {
+	width: 40%;
+	float: left;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	padding:15px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+.vrclocationsbox {
+	float: right;
+	height: 115px;
+}
+
+.vrclocationsmapdiv {
+	width:100%;
+	text-align:center;
+	font-size:12px;
+	/*background-image: url('./marker.png');*/
+}
+.vrclocationsmapdiv a {
+	background: url('./mapslocations-small.png') center top no-repeat;
+	padding:105px 0 0;
+	display:block;
+}
+
+#vrcmapcanvas {
+	border: 8px solid #cccccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin:0 auto;
+	box-shadow:0 0 5px #bbb;
+	-moz-box-shadow:0 0 5px #bbb;
+	-webkit-box-shadow:0 0 5px #bbb;
+}
+
+.vrcgmapinfow {
+	font-family:"Century Gothic", Tahoma, Arial;
+	padding: 3px;
+	color:#555;
+}
+
+.vrcgmapinfowdescr {
+	font-size:12px;
+}
+
+.vrcgmapinfowdescr p {
+	margin:0;
+	padding:0 0 5px 0;
+}
+
+.vrcgmapinfow h3{
+	font-size: 15px;
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+/*** custom ***/
+.vrcdivsearch {
+	padding:10px;
+	background:#fbfbfb;
+	border:1px solid #eee;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	width:440px;
+}
+
+.vrcdivsearch form table td select, .vrcdivsearch form table td input {
+	background:#fefefe;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	color:#666;
+	padding:6px !important;
+	font-size:12px !important;
+	line-height:12px;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.vrcdivsearch form table td input[type^="submit"] {
+	background:#ddd;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin:10px 0 0 0;
+	font-size:14px !important;
+	width:115px;
+	cursor:pointer;
+}
+.vrcdivsearch form table td input[type^="submit"]:hover {
+	background:#ccc;
+}
+.ui-helper-clearfix {
+	z-index:10000 !important;
+}
+.ui-datepicker-trigger {
+	margin:0 0 0 2px;
+}
+.dailyprices {
+	font-size:14px;
+	line-height:34px;
+}
+.vrcpaymentchangetot {
+	background:#FBFBFB;
+	border:1px solid #C9E9FC;
+	border-radius:4px;
+	padding:10px;
+	font-size:16px;
+	color:#666;
+	display:block;
+}
+.vrcpaymentchangetot .vrcorddiffpayment {
+	font-weight:bold;
+	color:#144D5C;
+	font-size:18px;
+}
+.vrcoptionforcequant {
+	padding:3px 6px;
+	background:#fbfbfb;
+	border:1px solid #ddd;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.ordenar{
+
+	float:left;
+
+
+}
+
+.imgresult.ordenar{
+
+	width: 20%;
+
+
+}
+
+.vrcrowcdescr.ordenar{
+
+	width: 20%;
+	padding-left: 3%;
+
+}
+
+.vrcrowcname.ordenar{
+
+	width: 100%;
+	font-size: 18px;
+	padding-bottom: 3%;
+
+}
+
+.vrcsrowprice.ordenar{
+
+	width: 20%;
+	padding-left: 3%;
+
+
+}
+
+.ordenar.carcat{
+
+	width: 60%;
+	text-align: center;
+
+
+}
+
+
+.ordenar.booknow{
+	width: 130px;
+	margin-left: 40%;
+	margin-right:40%;
+
+
+}
+
+img.car_img_box.ajust{
+
+ width:100%;
+ height:auto;
+
+
+}
+
+/*modificaciones para  social e idiomas iconos*/
+
+
+
+

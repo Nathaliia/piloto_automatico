@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKRENTCAR_CARSLIST_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKRENTCAR_CARSLIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Cars List" >
+		<message><![CDATA[VikRentCar Cars List]]></message>
+	</view>
+	<state>
+		<name>Cars List</name>
+		<description>VikRentCar Cars List</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/administrator/components/com_vikrentcar/fields">
+			<field name="category_id" type="vrccategory"
+				label="COM_VIKRENTCAR_CATEGORY_FIELD_SELECT_TITLE" required="false"
+				description="COM_VIKRENTCAR_CATEGORY_FIELD_SELECT_TITLE_DESC" />
+		</fieldset>
+	</fields>
+</metadata>
+

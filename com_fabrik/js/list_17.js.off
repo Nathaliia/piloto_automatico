@@ -1,0 +1,109 @@
+
+jQuery(document).ready(function() {
+
+var nombreLista='fabrik_list_17_group_17';
+
+var columnaRitiro= jQuery(".chun4_vikrentcar_orders___ritiro.fabrik_element."+nombreLista);
+
+
+//cambio la hora a la hora local
+columnaRitiro.each(function( item , x ){
+
+	debugger;
+
+	var s= jQuery(x);
+
+	valorDate = trimCadena(s.html());
+
+	s.html(valorDate);
+
+
+});
+
+
+var columnaConsegna= jQuery(".chun4_vikrentcar_orders___consegna.fabrik_element."+nombreLista);
+
+//cambio la hora a la hora local
+columnaConsegna.each(function( item , x ){
+
+	
+
+	var s= jQuery(x);
+
+	valorDate = trimCadena(s.html());
+
+	s.html(valorDate);
+
+
+});
+
+
+/*
+
+var valorDate= jQuery(".chun4_vikrentcar_orders___ritiro.fabrik_element."+nombreLista).html();
+
+valorDate = trimCadena(valorDate);
+
+jQuery(".chun4_vikrentcar_orders___ritiro.fabrik_element."+nombreLista).html(valorDate);
+
+
+var valorDate2= jQuery(".chun4_vikrentcar_orders___consegna.fabrik_element."+nombreLista).html();
+
+
+
+valorDate2 = trimCadena(valorDate2);
+
+jQuery(".chun4_vikrentcar_orders___consegna.fabrik_element."+nombreLista).html(valorDate2);
+
+
+*/
+
+
+//funcion formatea fecha
+function trimCadena(cadena){
+
+      debugger;
+       cadena=cadena.replace(/^\s+/,'').replace(/\s+$/,'');
+
+       cadena = cadena.replace(/-/g , "/");
+
+       var d1 = new Date (cadena);
+
+       var horas = d1.getHours();
+
+       //se suma 5 horas para que cuadre con la hora local
+       var sumhours= horas +5;
+      
+       d1.setHours(sumhours);
+
+       var year= d1.getFullYear().toString();
+       var mes= (d1.getMonth() + 1).toString();
+       var dia= d1.getDate().toString();
+
+       var hours= d1.getHours().toString();
+
+       var timeh = new Date(d1).toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1");
+
+       if(parseInt(mes) <10){
+       	mes ='0'+mes;
+
+
+       }
+
+        if(parseInt(dia) <10){
+       	dia ='0'+dia;
+
+
+       }
+       return(year+'-'+mes+'-'+dia+ ' ' +timeh);
+}
+
+
+function traducir(){
+
+
+
+
+}
+
+});

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PROFILER_USER_VIEW_DEFAULT_TITLE" option="COM_PROFILER_USER_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_PROFILER_USER_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+
+<fields name="params">
+	<fieldset name="basic" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC">
+		<field name="userlist_layout" type="componentlayout" label="JGLOBAL_FIELD_LAYOUT_LABEL" description="JGLOBAL_FIELD_LAYOUT_DESC" menuitems="true" extension="com_profiler" view="user"/>
+		<field name="readonly" type="list" description="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_READONLY_DESC" label="COM_PROFILER_VIEW_USERLIST_PARAMS_BASIC_FIELD_READONLY_LABEL">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	
+	</fieldset>
+</fields>
+
+	
+</metadata>

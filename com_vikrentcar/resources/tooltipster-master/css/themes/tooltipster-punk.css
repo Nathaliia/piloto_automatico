@@ -1,0 +1,17 @@
+.tooltipster-punk {
+	border-radius: 15px; 
+	border-bottom: 3px solid #2f79b7;
+	background: #0F5997;
+	color: #fff;
+}
+.tooltipster-punk .tooltipster-content {
+	font-family: verdana, "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+}
+
+.tooltipster-icon{
+
+	
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_PROFILER_REGISTRATION_VIEW_PROFILE_TITLE" option="COM_PROFILER_REGISTRATION_VIEW_PROFILE_OPTION" hidden="true">
+		<message>
+			<![CDATA[COM_PROFILER_REGISTRATION_VIEW_TABS_DESC]]>
+		</message>
+	</layout>
+</metadata>

@@ -1556,7 +1556,8 @@ function saveorder() {
 
 
 
-
+													//Calculamos el saldo actual del usuario
+													$saldo_actual = vikrentcar::calcularNuevoSaldo($idorder, $userId, $lid);
 
 														$body= vikrentcar :: makeemail($useremail, strip_tags($ftitle) . " " . JText :: _('VRORDNOL'), $ftitle, $nowts, $custdata, $carinfo['name'], $ppickup, $prelease, $pricestr, $optstr, $isdue, $viklink, JText :: _('VRINATTESA'), $ritplace, $consegnaplace, $maillocfee, $neworderid, $strcouponeff, '' ,'' , $tar[0]['idprice']);
 														$subject='Notificacion Reserva: '.$neworderid;
@@ -1564,7 +1565,8 @@ function saveorder() {
 
 														$msgsms=vikrentcar::getInfoOrderSms($neworderid, 2);
 
-														$saldo_actual = vikrentcar::calcularNuevoSaldo($idorder, $userId, $lid);
+
+														//Verificamos que el saldo actual del usuario sea positivo para de esta manera poder enviarle el SMS de confirmacion
 														if($saldo_actual >= 0){
 															vikrentcar::enviarsms($idUser,LISTA_NOTIFICACION_RESERVAS_SMS, $msgsms, $neworderid);
 														}
@@ -1594,7 +1596,12 @@ function saveorder() {
 														}
 
 														$msgsms=vikrentcar::getInfoOrderSms($neworderid, 4);
-														//vikrentcar::enviarsms($carinfo['idCond'],'', $msgsms,  $neworderid);
+
+
+														//Verificamos que el saldo actual del usuario sea positivo para de esta manera poder enviarle el SMS de confirmacion al piloto
+														if($saldo_actual >= 0){
+															vikrentcar::enviarsms($carinfo['idCond'],'', $msgsms,  $neworderid);
+														}										
 
 														?>
 		                                                <div>

@@ -1564,7 +1564,11 @@ function saveorder() {
 
 														$msgsms=vikrentcar::getInfoOrderSms($neworderid, 2);
 
-														//vikrentcar::enviarsms($idUser,LISTA_NOTIFICACION_RESERVAS_SMS, $msgsms, $neworderid);
+														$saldo_actual = vikrentcar::calcularNuevoSaldo($idorder, $userId, $lid);
+														if($saldo_actual >= 0){
+															vikrentcar::enviarsms($idUser,LISTA_NOTIFICACION_RESERVAS_SMS, $msgsms, $neworderid);
+														}
+														
 
 														/*$q="SELECT `user_id` FROM `#__vikrentcar_profiles` WHERE `num_doc`='".$carinfo['idCond']."'";
 														$dbo->setQuery($q);
